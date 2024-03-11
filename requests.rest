@@ -1,0 +1,34 @@
+/////////////////////////////////// USERS ///////////////////////////////////
+
+###
+POST http://localhost:9999/api/users
+Content-Type: application/json
+
+{
+    "name": "Bruno",
+    "email": "bruno@email.com",
+    "password": "bruno0903"
+}
+
+###
+GET http://localhost:9999/api/users
+Authorization: Bearer here your bearer
+
+
+
+/////////////////////////////////// AUTH ///////////////////////////////////
+
+###
+POST http://localhost:9999/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "bruno@email.com",
+    "password": "bruno0903"
+}
+
+###
+GET http://localhost:9999/api/auth/refresh_token
+
+###
+DELETE http://localhost:9999/api/auth/refresh_token
